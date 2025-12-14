@@ -1,0 +1,108 @@
+/* ========== COLOR VARIABLES ========== */
+:root {
+    --pink-tua: #DB1B60;
+    --pink-muda: #F8BBD0;
+    --hijau-daun: #81C784;
+    --abu-muda: #F5F5F5;
+    --dark: #333333;
+    --gray: #777777;
+}
+
+/* ===== COLOR PALETTE UTILITIES ===== */
+.bg-pink {
+    background-color: var(--pink-tua) !important;
+    color: #fff;
+}
+
+.bg-pink-soft {
+    background-color: var(--pink-muda) !important;
+    color: var(--dark);
+}
+
+.bg-green {
+    background-color: var(--hijau-daun) !important;
+    color: #fff;
+}
+
+.text-pink {
+    color: var(--pink-tua) !important;
+}
+
+/* Override outline primary agar ikut palette */
+.btn-outline-primary {
+    color: var(--pink-tua);
+    border-color: var(--pink-tua);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--pink-tua);
+    color: #fff;
+}
+
+
+/* ========== GLOBAL ========== */
+body {
+    background: white;
+    color: var(--dark);
+    font-family: "Poppins", sans-serif;
+}
+
+/* ========== BUTTONS ========== */
+.btn-primary {
+    background: var(--pink-tua);
+    color: white;
+    border: none;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+.btn-primary:hover {
+    background: #c01554;
+}
+
+/* Untuk navbar kecil / secondary */
+.btn-primary.small {
+    padding: 0.45rem 0.9rem;
+    font-size: 0.9rem;
+    border-radius: 6px;
+}
+
+/* ========== FOOTER ========== */
+footer {
+    background: white;
+    border-top: 1px solid #eee;
+    color: var(--gray);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+
+/* ========== CATEGORY BUTTON ========== */
+.category-btn {
+    border: 1.5px solid var(--pink-tua);
+    color: var(--pink-tua);
+    background: transparent;
+    font-weight: 500;
+    border-radius: 999px; /* pill */
+    padding: 0.4rem 1rem;
+    transition: all 0.25s ease;
+}
+
+/* Hover state (TIDAK BIRU) */
+.category-btn:hover {
+    background-color: var(--pink-muda);
+    color: var(--dark);
+    border-color: var(--pink-muda);
+}
+
+/* Active state */
+.category-btn.active {
+    background-color: var(--pink-tua);
+    color: #fff;
+    border-color: var(--pink-tua);
+}
+
+/* Focus (aksesibilitas) */
+.category-btn:focus {
+    box-shadow: 0 0 0 0.15rem rgba(219, 27, 96, 0.25);
+}

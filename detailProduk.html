@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Produk | Bloomify</title>
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <!-- STYLE ANDA -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/assets/img/Logo.png" width="90" alt="Bloomify">
+            </a>
+
+            <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="nav">
+                <ul class="navbar-nav gap-lg-4 mt-4 mt-lg-0 align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link fw-medium" href="/index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium active" href="/produk.html">Produk</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="/about.html">Tentang</a></li>
+                    <!-- CTA -->
+                    <li class="nav-item">
+                        <a href="https://wa.me/627788377420?text=Halo%20Bloomify,%20saya%20ingin%20bertanya%20tentang%20produk%20bunga."
+                            target="_blank" class="btn btn-primary small w-100 w-lg-auto mt-2 mt-lg-0">
+                            Hubungi Kami
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= PRODUCT DETAIL ================= -->
+    <section class="py-5">
+        <div class="container">
+
+            <div class="row g-5 align-items-start">
+
+                <!-- IMAGE -->
+                <div class="col-lg-6 text-center">
+
+                    <!-- WRAPPER UNTUK KONTROL UKURAN -->
+                    <div class="mx-auto" style="max-width: 420px;">
+                        <div class="ratio ratio-1x1 rounded-4 overflow-hidden shadow-sm">
+                            <img id="productImage" class="w-100 h-100" style="object-fit: cover;" alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- INFO -->
+                <div class="col-lg-6">
+
+                    <span id="productBadge" class="badge bg-pink mb-2 d-none"></span>
+
+                    <h1 id="productName" class="fw-bold mb-2"></h1>
+
+                    <p id="productPrice" class="fs-4 fw-semibold text-pink mb-3"></p>
+
+                    <p id="productDescription" class="text-muted mb-4"></p>
+
+                    <!-- ACTION -->
+                    <div class="d-flex flex-column flex-sm-row gap-2">
+                        <a id="orderButton" href="#" target="_blank" class="btn btn-primary">
+                            Pesan Sekarang
+                        </a>
+
+                        <a href="produk.html" class="btn btn-outline-primary">
+                            Kembali ke Produk
+                        </a>
+                    </div>
+
+
+                    <!-- EXTRA INFO -->
+                    <ul class="list-unstyled small text-muted mt-4">
+                        <li class="mb-2">
+                            <i class="fa-solid fa-check text-pink me-2"></i>
+                            Bunga segar pilihan
+                        </li>
+                        <li class="mb-2">
+                            <i class="fa-solid fa-check text-pink me-2"></i>
+                            Dirangkai oleh florist profesional
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check text-pink me-2"></i>
+                            Pengiriman aman & cepat
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 🔟 FOOTER -->
+    <footer class="pt-5 pb-3">
+        <div class="container">
+
+            <div class="row gy-4 text-center text-md-start">
+
+                <!-- BRAND INFO -->
+                <div class="col-md-4">
+                    <h5 class="fw-semibold mb-3">Bloomify</h5>
+                    <p class="text-muted small mb-3">
+                        Bloomify menghadirkan rangkaian bunga berkualitas
+                        untuk setiap momen berharga dalam hidup Anda.
+                    </p>
+
+                    <!-- SOCIAL MEDIA -->
+                    <div class="d-flex justify-content-center justify-content-md-start gap-3">
+                        <a href="#" class="text-pink fs-5">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-pink fs-5">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="text-pink fs-5">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- QUICK LINKS -->
+                <div class="col-md-4">
+                    <h6 class="fw-semibold mb-3">Menu</h6>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="/index.html" class="text-muted text-decoration-none">Beranda</a></li>
+                        <li class="mb-2"><a href="/produk.html" class="text-muted text-decoration-none">Produk</a></li>
+                        <li class="mb-2"><a href="/about.html" class="text-muted text-decoration-none">Tentang Kami</a>
+                        </li>
+                        <li><a href="#" class="text-muted text-decoration-none">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+
+                <!-- CONTACT -->
+                <div class="col-md-4">
+                    <h6 class="fw-semibold mb-3">Kontak</h6>
+                    <ul class="list-unstyled small text-muted">
+                        <li class="mb-2">
+                            <i class="fa-solid fa-location-dot me-2 text-pink"></i>
+                            Jakarta, Indonesia
+                        </li>
+                        <li class="mb-2">
+                            <i class="fa-solid fa-envelope me-2 text-pink"></i>
+                            hello@bloomify.id
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone me-2 text-pink"></i>
+                            +62 812-3456-7890
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- COPYRIGHT -->
+            <div class="text-center border-top mt-4 pt-3">
+                <p class="small text-muted mb-0">
+                    © 2025 Bloomify — Bloom with Beauty
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        const products = [
+            {
+                id: 1,
+                name: "Bouquet Mawar Merah",
+                price: 250000,
+                badge: "Best Seller",
+                image: "/assets/img/mawar.jpg",
+                description: "Rangkaian mawar merah premium yang melambangkan cinta, romantisme, dan apresiasi."
+            },
+            {
+                id: 2,
+                name: "Bouquet Lily Putih",
+                price: 275000,
+                badge: "",
+                image: "/assets/img/lily.jpeg",
+                description: "Bouquet lily putih elegan dengan kesan bersih dan anggun."
+            },
+            {
+                id: 3,
+                name: "Bouquet Mix Elegant",
+                price: 320000,
+                badge: "",
+                image: "/assets/img/mix.png",
+                description: "Perpaduan bunga warna-warni yang ceria namun tetap elegan."
+            },
+            {
+                id: 4,
+                name: "Sunflower Ceria",
+                price: 290000,
+                badge: "New",
+                image: "/assets/img/Sunflower.jpg",
+                description: "Rangkaian bunga matahari yang melambangkan kebahagiaan dan energi positif."
+            },
+            {
+                id: 5,
+                name: "Bouquet Premium Wedding",
+                price: 480000,
+                badge: "",
+                image: "/assets/img/wedding.jpg",
+                description: "Bouquet premium khusus acara pernikahan dengan desain elegan."
+            },
+            {
+                id: 6,
+                name: "Standing Flower Elegan",
+                price: 650000,
+                badge: "",
+                image: "/assets/img/standing.jpeg",
+                description: "Standing flower mewah untuk acara formal dan pembukaan."
+            }
+        ];
+
+        function formatPrice(price) {
+            return "Rp " + price.toLocaleString("id-ID");
+        }
+
+        const params = new URLSearchParams(window.location.search);
+        const productId = parseInt(params.get("id"));
+        const product = products.find(p => p.id === productId);
+
+        if (!product) {
+            document.body.innerHTML = `
+            <div class="container py-5 text-center">
+                <h3>Produk tidak ditemukan</h3>
+                <a href="produk.html" class="btn btn-primary mt-3">Kembali ke Produk</a>
+            </div>`;
+        } else {
+            // Render konten
+            document.getElementById("productImage").src = product.image;
+            document.getElementById("productImage").alt = product.name;
+            document.getElementById("productName").textContent = product.name;
+            document.getElementById("productPrice").textContent = formatPrice(product.price);
+            document.getElementById("productDescription").textContent = product.description;
+
+            if (product.badge) {
+                const badge = document.getElementById("productBadge");
+                badge.textContent = product.badge;
+                badge.classList.remove("d-none");
+            }
+
+            // ================= WHATSAPP ORDER =================
+            const phoneNumber = "6287788377420"; // GANTI NOMOR INI
+            const message = `
+Halo Bloomify 👋
+
+Saya tertarik untuk memesan produk berikut:
+
+🌸 *${product.name}*
+💰 Harga: *${formatPrice(product.price)}*
+
+Mohon informasinya ya. Terima kasih 😊
+        `.trim();
+
+            const whatsappUrl =
+                `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+            document.getElementById("orderButton").href = whatsappUrl;
+        }
+    </script>
+
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
